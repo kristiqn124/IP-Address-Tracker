@@ -51,7 +51,6 @@ getUserIp().then((data) => {
   searchMapIp(ip).then((data) => {
     latlng = L.latLng(data.location.lat, data.location.lng);
     marker = L.marker(latlng, markerOptions).addTo(mymap);
-    console.log(data);
     mymap.setView(latlng, 9);
     uiOutput(data);
   });
