@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: "Rubik", sans-serif;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.search_container {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  height: 35vh;
+  background-image: url("/images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.text_header {
+  margin-top: 40px;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.ip_container {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+.ip_input {
+  width: 30%;
+  height: 25%;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding-left: 10px;
+}
+.search_btn {
+  background-color: hsl(0, 0%, 17%);
+  width: 3%;
+  height: 26%;
+  padding: 2px;
+  margin-left: 0;
+  border-radius: 0 10px 10px 0;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+}
+.search_btn:hover {
+  background-color: hsl(0, 0%, 59%);
+}
+.img_arrow {
+  height: 50%;
+}
+#mapid {
+  height: 450px;
+  position: relative;
+}
+.map_container {
+  position: relative;
+}
+.output_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 26%;
+  z-index: 9999;
+  color: black;
+  background-color: white;
+  width: 60%;
+  height: 15%;
+  padding: 10px 50px 10px 20px;
+  border-radius: 10px;
+}
+.header_output {
+  color: rgb(170, 163, 163);
+  font-size: small;
+}
+.output p {
+  color: black;
+  font-size: x-large;
+  font-weight: 600;
+}
+.separator {
+  min-height: 0;
+  height: 50%;
+  border-left: 1px solid rgb(209, 202, 202);
+}
+
+@media only screen and (max-width: 700px) {
+  .output_info {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    top: 23%;
+    width: 70%;
+    padding: 20px;
+  }
+  .output_info div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ip_input {
+    width: 70%;
+  }
+  .search_btn {
+    width: 10%;
+  }
+  .separator {
+    height: 0;
+    min-width: 0;
+    width: 50%;
+    border-left: none;
+    border-bottom: 1px solid rgb(209, 202, 202);
+  }
+  .search_container {
+    height: 40vh;
+  }
+  .text_header {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  #mapid {
+    height: 600px;
+  }
+  .isp {
+    padding-left: 10px;
+  }
+}
